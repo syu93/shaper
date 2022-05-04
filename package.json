@@ -1,10 +1,12 @@
 {
-  "name": "shaper",
+  "name": "shaper-proxy",
   "version": "1.0.0",
   "description": "An image resize web service",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "npx nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,11 @@
   },
   "homepage": "https://github.com/syu93/shaper#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
+    "helmet": "^5.0.2",
     "node-fetch": "^2.6.7",
-    "sharp": "^0.30.3"
+    "sharp": "^0.30.3",
+    "yargs": "^17.4.1"
   }
 }
