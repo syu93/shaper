@@ -1,5 +1,5 @@
 {
-  "name": "shaper-proxy",
+  "name": "shapper-proxy",
   "version": "1.0.0",
   "description": "An image resize web service",
   "main": "index.js",
