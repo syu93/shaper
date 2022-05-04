@@ -43,7 +43,7 @@ require('yargs')
       describe: 'This port to be used by the server'
     })
   }, function (argv) {
-    console.log("Start shper server on port", argv.port);
+    console.log("Start shaper-proxy server on port", argv.port);
     app.listen(argv.port);
   })
   .help()
